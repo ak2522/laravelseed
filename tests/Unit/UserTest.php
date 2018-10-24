@@ -33,4 +33,8 @@ class UserTest extends TestCase
         $this->assertClassHasAttribute('fillable', 'App\User');
     }
 
+    public function teststring()
+    {
+        $this->assertContainsOnly('string', ['2']);
+    }
 }
